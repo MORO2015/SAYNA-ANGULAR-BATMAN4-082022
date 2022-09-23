@@ -13,7 +13,7 @@ import { EshopComponent } from './components/eshop/eshop.component';
 import { ProductComponent } from './components/product/product.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AsideComponent } from './components/aside/aside.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +26,10 @@ import { AsideComponent } from './components/aside/aside.component';
     EshopComponent,
     ProductComponent,
     CartComponent,
-    AsideComponent
+    AsideComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
